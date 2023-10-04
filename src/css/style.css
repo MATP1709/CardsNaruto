@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+/* NAVBAR*/
+.NavBar{
+  display: flex; /**/
+  justify-content: space-around; /*separar y centrar los items*/
+  padding: 10px; /*Espacio de todos lados*/
+  background-color: white;
+}
+
+.NavBar img {
+  width: 150px;
+  height: 50px;
+}
+
+.NavBar p{
+  font-size: 45px;
+  font-weight: bold;
+}
+/* FIN DE NAVBAR */
+
+/*CAMBIAMOS EL COLOR DE FONDO DEL GENERAL*/
+.general{
+  background: rgb(30, 55, 82);
+}
+
+/*El containerPersonaje, engloba en general las cards*/
+.containerPersonaje{
+  display: flex;
+  justify-content: space-around; /*para separar el contenido y centrar*/
+  gap: 30px; /*separación de arriba*/
+  flex-wrap: wrap; /*para que no se muestre en una sola linea */
+  padding: 30px; /*contenedor principal para separarlo de todo */
+}
+
+/*El cardPersonaje, engloba solo la carta a mostrar*/
+.cardPersonaje{
+  display: grid; 
+  justify-content: space-between; /*para separar el contenido equitativamente*/
+  width: auto; /*el grosor se ajusta automaticamente*/
+  height: auto; /*el espacio de arriba y abajo se ajuste solo*/
+  border: 1px solid rgb(30, 55, 82);
+  border-radius: 25px; /*para dar un borde circular*/
+  box-shadow: 7px 13px 37px #000; /*para dar sombreado al formulario de registro*/
+  padding: 15px; /*Dentro del CARD, genera un marco segun el px*/
+  background-color: #24303c; /*para el color del fondo del CARD*/
+  /*transition: transform 0.2s ease-in-out;*/
+  cursor: pointer;/* darle forma de mano al cursor*/
+}
+.cardPersonaje:hover{
+  transform: scale(1.05); /*para que se agrande cuando pase el cursos encima*/
+}
+
+.cardPersonaje img{
+    width: 300px; /*para el ancho de la imagen del Card*/
+    height: 200px; /*para el alto de la imagen del Card */
+    border-radius: 25px; /*dar un borde circular*/
+}
+
+.cardPersonaje h1 {
+  padding-left: 10%; /*para darle una sangria*/
+  font-size: 18px;  /*tamño del texto*/
+  margin-top: 5px; /*para dar espacio entrelineado*/
+  color: #5f8ceec0; /*color del texto*/
+  text-align: left; /*alinear todo el texto a la izquierda*/
+  font-weight: bold; /*texto en negrita*/
+}
+
+.cardPersonaje h1 i{
+  font-size: 16px; /*tamaño del texto*/
+  color: white; /*color del texto*/
+  text-decoration: none; /*eliminar la decoración*/
+}
+
+.txtDatos{
+  margin-top: 15px;/*para darle un espacio en los datos*/
+}
